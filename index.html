@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Document</title>
+ <style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.772),rgb(238, 45, 209));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #container{
+        width: 400px;
+        height: 400px;
+        background-image: linear-gradient(rgb(232, 49, 226),rgba(0, 0, 0, 0.681));
+        background-color: antiquewhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px black, -2px -2px 3px black;
+    }
+    #display{
+        padding-left: 10px;
+        font-size: 25px;
+        width: 300px;
+        height: 40px;
+        margin-bottom: 50px;
+        background-color: rgb(231, 148, 211);
+        border-radius: 10px;
+        border: none;
+    }
+    #one{
+      position: relative;
+      bottom: 60px;
+      width: 50px;
+      height: 30px;
+      margin: 10px;
+      left: 7px;
+  }
+  #two{
+      position: relative;
+      bottom: 60px;
+      width: 50px;
+      height: 30px;
+      margin: 10px;
+      left: 7px;
+  }
+  #three{
+      position: relative;
+      bottom: 60px;
+      width: 50px;
+      height: 30px;
+      margin: 10px;
+      left: 7px;
+  }
+  #plus{
+      position: relative;
+      bottom: 60px;
+      width: 50px;
+      height: 30px;
+      margin: 10px;
+      left: 7px;
+  }
+  #four{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 60px;
+    left: 16px;
+  }
+  #five{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 60px;
+    left: 38px;
+  }
+  #six{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 60px;
+    left: 56px;
+  }
+  #minus{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 60px;
+    left: 76px;
+  }
+  #seven{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 50px;
+    left: 16px;
+  }
+  #eight{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 50px;
+    left: 38px;
+  }
+  #nine{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 50px;
+    left: 56px;
+  }
+  #multi{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 50px;
+    left: 76px;
+  }
+  #divide{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 40px;
+    left: 16px;
+  }
+  #zero{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 40px;
+    left: 38px;
+  }
+  #dot{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 40px;
+    left: 56px;
+  }
+  #modulus{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    bottom: 40px;
+    left: 76px;
+  }
+  #clear{
+    width: 125px;
+    height: 30px;
+    position: relative;
+    bottom: 20px;
+    left: 17px;
+  }
+  #equal{
+    width: 125px;
+    height: 30px;
+    position: relative;
+    bottom: 20px;
+    left: 34px;
+  }
+  .a{
+    background-color: black;
+    color: rgb(212, 75, 243);
+    font-size: 24px;
+  }
+  .a:hover{
+     color: black;
+    background-color:rgb(212, 75, 243);
+  }
+ 
+ </style>
+</head>
+<body>
+    <div id="cover"></div>
+    <div id="container">
+        <form name="calc" id="form">
+            <input  name="Answer" id="display">
+           
+            <br><br>
+            <input id="one" class="a"  type="button" value="1" onclick="calc.Answer.value +='1'">
+            <input id="two" class="a" type="button" value="2" onclick="calc.Answer.value +='2'">
+            <input id="three" class="a" type="button" value="3" onclick="calc.Answer.value +='3'">
+            <input id="plus" class="a" type="button" value="+" onclick="calc.Answer.value +='+'">
+            <br><br>
+            <input class="a" id="four" type="button" value="4" onclick="calc.Answer.value +='4'">
+            <input class="a" id="five" type="button" value="5" onclick="calc.Answer.value +='5'">
+            <input class="a" id="six" type="button" value="6" onclick="calc.Answer.value +='6'">
+            <input class="a" id="minus" type="button" value="-" onclick="calc.Answer.value +='-'">
+         <br><br>
+            <input  class="a" id="seven" type="button" value="7" onclick="calc.Answer.value +='7'">
+            <input  class="a" id="eight" type="button" value="8" onclick="calc.Answer.value +='8'">
+            <input  class="a" id="nine" type="button" value="9" onclick="calc.Answer.value +='9'">
+            <input  class="a" id="multi" type="button" value="*" onclick="calc.Answer.value +='*'">
+            <br><br>
+            <input  class="a" id="divide" type="button" value="/" onclick="calc.Answer.value +='/'">
+            <input  class="a" id="zero" type="button" value="0" onclick="calc.Answer.value +='0'">
+            <input  class="a" id="dot" type="button" value="." onclick="calc.Answer.value +='.'">
+            <input  class="a" id="modulus" type="button" value="%" onclick="calc.Answer.value +='%'">
+            <br>
+            <input class="a"id="clear"type="button" value="Clear" onclick="calc.Answer.value =' '">
+            <input class="a"id="equal"type="button" value="=" onclick="calc.Answer.value =eval(calc.Answer.value)">
+        </form>
+    </div>
+</body>
+</html>
